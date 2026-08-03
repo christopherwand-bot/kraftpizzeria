@@ -1,0 +1,707 @@
+.kraft-landing {
+  --kraft-bg: #f5efe4;
+  --kraft-paper: rgba(255, 250, 242, 0.82);
+  --kraft-text: #24150d;
+  --kraft-muted: #6f5847;
+  --kraft-line: rgba(36, 21, 13, 0.1);
+  --kraft-accent: #ba4a1b;
+  --kraft-accent-dark: #8b2f0a;
+  --kraft-shadow: 0 24px 60px rgba(49, 26, 15, 0.14);
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+  color: var(--kraft-text);
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+}
+
+.kraft-landing * {
+  box-sizing: border-box;
+}
+
+.kraft-landing a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kraft-landing img {
+  max-width: 100%;
+  display: block;
+}
+
+.kraft-landing .kraft-topbar {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(255, 248, 239, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 22px;
+  backdrop-filter: blur(18px);
+  box-shadow: var(--kraft-shadow);
+}
+
+.kraft-landing .kraft-brand,
+.kraft-landing h1,
+.kraft-landing h2,
+.kraft-landing h3,
+.kraft-landing summary {
+  font-family: "Fraunces", serif;
+}
+
+.kraft-landing .kraft-brand img {
+  width: auto;
+  height: 64px;
+}
+
+.kraft-landing .kraft-nav {
+  display: flex;
+  gap: 24px;
+  color: var(--kraft-muted);
+  font-weight: 600;
+}
+
+.kraft-landing .kraft-nav a:hover,
+.kraft-landing .kraft-card-actions a:hover {
+  color: var(--kraft-accent-dark);
+}
+
+.kraft-landing .kraft-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--kraft-accent);
+  color: #fff7f0;
+  font-weight: 800;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.kraft-landing .kraft-button:hover {
+  transform: translateY(-1px);
+  background: var(--kraft-accent-dark);
+}
+
+.kraft-landing .kraft-button-secondary,
+.kraft-landing .kraft-button-ghost {
+  color: var(--kraft-text);
+  background: transparent;
+  border-color: var(--kraft-line);
+}
+
+.kraft-landing .kraft-button:focus-visible,
+.kraft-landing .kraft-nav a:focus-visible,
+.kraft-landing .kraft-card-actions a:focus-visible,
+.kraft-landing .kraft-faq-item summary:focus-visible {
+  outline: 2px solid var(--kraft-accent-dark);
+  outline-offset: 3px;
+}
+
+.kraft-landing .kraft-hero {
+  padding: 72px 0 48px;
+}
+
+.kraft-landing .kraft-hero-copy,
+.kraft-landing .kraft-location-card,
+.kraft-landing .kraft-menu-grid article,
+.kraft-landing .kraft-quote-card,
+.kraft-landing .kraft-checklist,
+.kraft-landing .kraft-cta-panel,
+.kraft-landing .kraft-stats article,
+.kraft-landing .kraft-showcase-content,
+.kraft-landing .kraft-service-card,
+.kraft-landing .kraft-atmosphere-card,
+.kraft-landing .kraft-room-card,
+.kraft-landing .kraft-gallery-card,
+.kraft-landing .kraft-faq-item,
+.kraft-landing .kraft-final-image-card {
+  background: var(--kraft-paper);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: var(--kraft-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.kraft-landing .kraft-hero-copy {
+  padding: 40px;
+  border-radius: 36px;
+  max-width: 760px;
+}
+
+.kraft-landing .kraft-eyebrow {
+  margin: 0 0 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--kraft-accent-dark);
+}
+
+.kraft-landing h1 {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 0.96;
+}
+
+.kraft-landing .kraft-lead {
+  max-width: 56ch;
+  margin: 20px 0 0;
+  color: var(--kraft-muted);
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.kraft-landing .kraft-hero-actions,
+.kraft-landing .kraft-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.kraft-landing .kraft-hero-points {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kraft-landing .kraft-hero-points li::before {
+  content: "•";
+  margin-right: 10px;
+  color: var(--kraft-accent);
+}
+
+.kraft-landing .kraft-tag {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(186, 74, 27, 0.12);
+  color: var(--kraft-accent-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.kraft-landing .kraft-stats,
+.kraft-landing .kraft-showcase-grid,
+.kraft-landing .kraft-location-grid,
+.kraft-landing .kraft-service-grid,
+.kraft-landing .kraft-room-grid,
+.kraft-landing .kraft-menu-grid,
+.kraft-landing .kraft-gallery-grid,
+.kraft-landing .kraft-atmosphere-grid,
+.kraft-landing .kraft-experience-layout,
+.kraft-landing .kraft-faq-list {
+  display: grid;
+  gap: 18px;
+}
+
+.kraft-landing .kraft-stats {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kraft-landing .kraft-stats article {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.kraft-landing .kraft-stats strong {
+  font-size: 1.6rem;
+}
+
+.kraft-landing .kraft-section {
+  padding-top: 78px;
+}
+
+.kraft-landing .kraft-section-heading {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.kraft-landing .kraft-section-heading-narrow {
+  max-width: 820px;
+}
+
+.kraft-landing h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.kraft-landing .kraft-showcase-grid {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: stretch;
+}
+
+.kraft-landing .kraft-showcase-visual {
+  min-height: 540px;
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: var(--kraft-shadow);
+}
+
+.kraft-landing .kraft-showcase-visual img,
+.kraft-landing .kraft-gallery-card img,
+.kraft-landing .kraft-atmosphere-card img,
+.kraft-landing .kraft-room-card img,
+.kraft-landing .kraft-final-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.kraft-landing .kraft-showcase-content,
+.kraft-landing .kraft-service-card,
+.kraft-landing .kraft-location-card,
+.kraft-landing .kraft-checklist,
+.kraft-landing .kraft-gallery-copy,
+.kraft-landing .kraft-atmosphere-copy {
+  padding: 28px;
+  border-radius: 30px;
+}
+
+.kraft-landing .kraft-showcase-content {
+  display: grid;
+  align-content: center;
+  gap: 22px;
+  padding: 34px;
+}
+
+.kraft-landing .kraft-showcase-content p,
+.kraft-landing .kraft-service-card p,
+.kraft-landing .kraft-location-card p,
+.kraft-landing .kraft-checklist p,
+.kraft-landing .kraft-gallery-copy p,
+.kraft-landing .kraft-atmosphere-copy p,
+.kraft-landing .kraft-cta-panel p,
+.kraft-landing .kraft-faq-item p {
+  color: var(--kraft-muted);
+  line-height: 1.7;
+}
+
+.kraft-landing .kraft-feature-list {
+  display: grid;
+  gap: 16px;
+}
+
+.kraft-landing .kraft-feature-list div {
+  padding-top: 16px;
+  border-top: 1px solid var(--kraft-line);
+}
+
+.kraft-landing .kraft-feature-list strong,
+.kraft-landing .kraft-service-card h3,
+.kraft-landing .kraft-atmosphere-copy h3,
+.kraft-landing .kraft-gallery-copy h3 {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.kraft-landing .kraft-location-grid {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+}
+
+.kraft-landing .kraft-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.kraft-landing .kraft-service-grid,
+.kraft-landing .kraft-menu-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kraft-landing .kraft-room-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.kraft-landing .kraft-room-card {
+  position: relative;
+  min-height: 440px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.kraft-landing .kraft-room-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 13, 9, 0.12), rgba(20, 13, 9, 0.78));
+}
+
+.kraft-landing .kraft-room-card-dark::after {
+  background: linear-gradient(180deg, rgba(20, 13, 9, 0.06), rgba(20, 13, 9, 0.84));
+}
+
+.kraft-landing .kraft-room-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 28px;
+}
+
+.kraft-landing .kraft-room-copy h3,
+.kraft-landing .kraft-room-copy p {
+  color: #fff2e4;
+}
+
+.kraft-landing .kraft-room-copy h3,
+.kraft-landing .kraft-final-image-copy h2 {
+  margin: 0 0 8px;
+}
+
+.kraft-landing .kraft-room-copy p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.kraft-landing .kraft-menu-grid article {
+  padding: 26px;
+  border-radius: 30px;
+}
+
+.kraft-landing .kraft-gallery-grid {
+  grid-template-columns: 1.25fr 0.75fr 0.75fr;
+}
+
+.kraft-landing .kraft-gallery-card {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.kraft-landing .kraft-gallery-card img {
+  height: 320px;
+}
+
+.kraft-landing .kraft-gallery-card-large img {
+  min-height: 100%;
+}
+
+.kraft-landing .kraft-gallery-copy h3 {
+  font-size: 1.5rem;
+}
+
+.kraft-landing .kraft-atmosphere-grid {
+  grid-template-columns: 1.1fr 0.9fr 0.9fr;
+}
+
+.kraft-landing .kraft-atmosphere-card {
+  display: grid;
+  grid-template-rows: minmax(280px, 1fr) auto;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.kraft-landing .kraft-experience-layout {
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+}
+
+.kraft-landing .kraft-quote-card {
+  padding: 30px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(48, 67, 51, 0.95), rgba(31, 44, 34, 0.96));
+}
+
+.kraft-landing .kraft-quote-card p {
+  margin: 0;
+  color: #f8efe4;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.kraft-landing .kraft-checklist {
+  display: grid;
+  gap: 20px;
+}
+
+.kraft-landing .kraft-checklist h3,
+.kraft-landing .kraft-location-card h3,
+.kraft-landing .kraft-menu-grid h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.kraft-landing .kraft-cta-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 34px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 196, 104, 0.34), transparent 28%),
+    linear-gradient(135deg, rgba(186, 74, 27, 0.16), rgba(255, 248, 239, 0.92));
+}
+
+.kraft-landing .kraft-reviews-panel {
+  background:
+    radial-gradient(circle at top right, rgba(48, 67, 51, 0.22), transparent 28%),
+    linear-gradient(135deg, rgba(36, 21, 13, 0.06), rgba(255, 248, 239, 0.94));
+}
+
+.kraft-landing .kraft-rating-panel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border-radius: 24px;
+  background: rgba(255, 250, 242, 0.88);
+  border: 1px solid rgba(36, 21, 13, 0.08);
+}
+
+.kraft-landing .kraft-rating-score {
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1;
+  color: var(--kraft-accent-dark);
+}
+
+.kraft-landing .kraft-rating-meta p,
+.kraft-landing .kraft-rating-meta strong {
+  margin: 0;
+}
+
+.kraft-landing .kraft-rating-stars {
+  margin-bottom: 6px;
+  letter-spacing: 0.14em;
+  color: #c58a10;
+  font-size: 1.05rem;
+}
+
+.kraft-landing .kraft-faq-list {
+  max-width: 880px;
+}
+
+.kraft-landing .kraft-faq-item {
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.kraft-landing .kraft-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px 28px;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.kraft-landing .kraft-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.kraft-landing .kraft-faq-item summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--kraft-accent-dark);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.kraft-landing .kraft-faq-item[open] summary::after {
+  content: "-";
+}
+
+.kraft-landing .kraft-faq-item p {
+  margin: 0;
+  padding: 0 28px 24px;
+}
+
+.kraft-landing .kraft-final-image-card {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.kraft-landing .kraft-final-image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(23, 14, 9, 0.82), rgba(23, 14, 9, 0.18));
+}
+
+.kraft-landing .kraft-final-image-copy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  max-width: 720px;
+  padding: 42px;
+}
+
+.kraft-landing .kraft-final-image-copy .kraft-eyebrow,
+.kraft-landing .kraft-final-image-copy h2,
+.kraft-landing .kraft-final-image-copy p {
+  color: #fff2e4;
+}
+
+.kraft-landing .kraft-mobile-bar {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: max(10px, env(safe-area-inset-bottom));
+  z-index: 20;
+  display: none;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(255, 248, 239, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  box-shadow: var(--kraft-shadow);
+  backdrop-filter: blur(18px);
+}
+
+.kraft-landing .kraft-mobile-bar .kraft-button {
+  flex: 1 1 0;
+}
+
+@media (max-width: 1100px) {
+  .kraft-landing .kraft-showcase-grid,
+  .kraft-landing .kraft-atmosphere-grid,
+  .kraft-landing .kraft-room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kraft-landing .kraft-showcase-visual {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 960px) {
+  .kraft-landing .kraft-nav {
+    display: none;
+  }
+
+  .kraft-landing .kraft-stats,
+  .kraft-landing .kraft-service-grid,
+  .kraft-landing .kraft-menu-grid,
+  .kraft-landing .kraft-gallery-grid,
+  .kraft-landing .kraft-experience-layout,
+  .kraft-landing .kraft-cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .kraft-landing .kraft-section {
+    padding-top: 64px;
+  }
+
+  .kraft-landing .kraft-showcase-content,
+  .kraft-landing .kraft-room-copy,
+  .kraft-landing .kraft-final-image-copy {
+    padding: 28px;
+  }
+
+  .kraft-landing .kraft-showcase-visual,
+  .kraft-landing .kraft-room-card,
+  .kraft-landing .kraft-final-image-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kraft-landing {
+    padding-bottom: 110px;
+  }
+
+  .kraft-landing .kraft-topbar {
+    top: 10px;
+    padding: 14px 16px;
+    border-radius: 18px;
+  }
+
+  .kraft-landing .kraft-brand img {
+    height: 42px;
+  }
+
+  .kraft-landing h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .kraft-landing h2 {
+    font-size: clamp(1.85rem, 8vw, 2.6rem);
+  }
+
+  .kraft-landing .kraft-lead {
+    font-size: 1rem;
+  }
+
+  .kraft-landing .kraft-button,
+  .kraft-landing .kraft-button-ghost {
+    width: 100%;
+  }
+
+  .kraft-landing .kraft-hero-actions,
+  .kraft-landing .kraft-cta-actions {
+    flex-direction: column;
+  }
+
+  .kraft-landing .kraft-hero-copy,
+  .kraft-landing .kraft-location-card,
+  .kraft-landing .kraft-checklist,
+  .kraft-landing .kraft-quote-card,
+  .kraft-landing .kraft-cta-panel {
+    border-radius: 26px;
+  }
+
+  .kraft-landing .kraft-stats article,
+  .kraft-landing .kraft-menu-grid article,
+  .kraft-landing .kraft-service-card,
+  .kraft-landing .kraft-faq-item,
+  .kraft-landing .kraft-gallery-card,
+  .kraft-landing .kraft-atmosphere-card {
+    border-radius: 24px;
+  }
+
+  .kraft-landing .kraft-gallery-card img {
+    height: 260px;
+  }
+
+  .kraft-landing .kraft-showcase-visual,
+  .kraft-landing .kraft-room-card,
+  .kraft-landing .kraft-final-image-card {
+    min-height: 320px;
+  }
+
+  .kraft-landing .kraft-rating-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .kraft-landing .kraft-faq-item summary,
+  .kraft-landing .kraft-faq-item p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .kraft-landing .kraft-faq-item summary {
+    font-size: 1.1rem;
+  }
+
+  .kraft-landing .kraft-mobile-bar {
+    display: flex;
+  }
+}

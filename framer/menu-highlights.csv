@@ -1,0 +1,7 @@
+name,slug,category,tag,title,description,priceFrom,sortOrder,featured,image
+Margherita,margherita,Pizza,"Klassiker · 199 kr",Margherita,"San Marzano-tomatsaus, basilikum, mozzarella fior di latte og Grana Padano DOP.",199,1,true,IMG_2414.jpg
+Quattro Kraft,quattro-kraft,Pizza,"Signatur · 305 kr",Quattro Kraft,"En tung og raus signaturpizza med fire typer spekemat, kjøtt og pølse, bygget på mozzarella fior di latte og tydelige råvarer.",305,2,true,IMG_2556.jpg
+Il Fuoco Dolce,il-fuoco-dolce,Pizza,"Ny favoritt · 289 kr",Il Fuoco Dolce,"Hvit saus, mozzarella fior di latte, stekt parma, taleggio, ruccola, honning og chiliolje. Søtt, salt og litt farlig på riktig måte.",289,3,true,IMG_2574.jpg
+Pasta Carbonara,pasta-carbonara,Pasta,"Pasta · fra 289 kr",Pasta Carbonara,"En klassiker laget etter autentisk italiensk oppskrift med guanciale. Ingen fløte. Ingen bacon. Vi gjør det ordentlig.",289,4,true,IMG_2661.jpg
+Caprese con Burrata,caprese-con-burrata,Forrett,"Forrett · fra 139 kr",Caprese con Burrata,"Burrata, digge cherrytomater og en nøye utvalgt balsamicosirup. Ferskvare vi tar inn litt og litt av.",139,5,true,IMG_2562.jpg
+Parma,parma,Pizza,"Fleksibelt valg · fra 279 kr",Parma,"San Marzano-tomatsaus, mozzarella fior di latte, parmaskinke fra en liten gård nord i Italia, ruccola, ristede pinjekjerner og Grana Padano DOP.",279,6,true,IMG_2568.jpg

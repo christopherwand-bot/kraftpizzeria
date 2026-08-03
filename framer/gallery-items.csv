@@ -1,0 +1,9 @@
+name,slug,section,tag,title,description,sortOrder,isActive,image
+"Mer smak",mer-smak,gallery,Pizza,"Mer smak, mer topping, mer trøkk","Et bedre blikkfang for seksjonen. Luftig bunn, tydelig ost og topping som faktisk fyller hele flaten.",1,true,IMG_2556.jpg
+Tagliatelle Ragu,tagliatelle-ragu,gallery,"Pasta · 269 kr",Tagliatelle Ragu,"Hjemmelaget ragu, tagliatelle og Grana Padano DOP. Comfort food med ordentlig dybde og pizza brød ved siden av.",2,true,IMG_2661.jpg
+Naermere pa ravarene,naermere-pa-ravarene,gallery,Detaljer,Nærmere på råvarene,"Parma, ruccola, parmesan og pinjekjerner gjør mer for appetitten enn enda et generisk oversiktsbilde.",3,true,IMG_2574.jpg
+Steinovn,steinovn,atmosphere,Steinovn,Ovnen er en del av signaturen,"Det er her mye av uttrykket sitter. Varmen, kanten, tempoet og den lille ekstra nerven som gjør at pizzaen ikke føles generisk.",1,true,2T7A5464.jpeg
+Deigen,deigen,atmosphere,Deigen,Tiden og håndverket må få synes,"Lang heving er fint å skrive om, men enda bedre når folk ser at det faktisk ligger arbeid bak hver bunn som går i ovnen.",2,true,2T7A5286.jpeg
+Mottaket,mottaket,atmosphere,Mottaket,Lav terskel er også en del av opplevelsen,"Det skal være lett å komme inn, hente takeaway eller sette seg ned. Kraft skal kjennes varmt og uformelt fra første blikk.",3,true,2T7A5350.jpeg
+"I restauranten",i-restauranten,service,"I restauranten","Rolig, varmt og uten stivhet","Det skal være lett å sette seg ned, dele noen retter og la kvelden ta litt mer plass enn den pleier.",1,true,2T7A5331.jpeg
+Takeaway,takeaway,service,Takeaway,Når middagen blir med hjem,"Takeaway skal ikke føles som plan B. Det er samme kjøkken, samme råvarer og samme håndverk, bare pakket for sofa og kjøkkenbord.",2,true,2T7A5487.jpeg
