@@ -67,6 +67,10 @@
   background: linear-gradient(145deg, #edf0e7, #fff8ef);
 }
 
+.landing-page .selector-card-alt .selector-photo {
+  object-position: center 40%;
+}
+
 .landing-page .selector-card:focus-visible,
 .location-page-kongsberg a:focus-visible {
   outline: 3px solid var(--accent-dark);
